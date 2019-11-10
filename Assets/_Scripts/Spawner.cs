@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public double startCooldown = 2;
     public int leftBoundary = -7;
-    public int rightBoundary = 12;
+    public int rightBoundary = 8;
     private double cooldown;
 
     public GameObject obstacle;

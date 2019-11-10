@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &241587530
 Transform:
   m_ObjectHideFlags: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startCooldown: 2
   leftBoundary: -7
-  rightBoundary: 12
+  rightBoundary: 8
   obstacle: {fileID: 4900462698939191869, guid: e3a8c5de013324432b930aaeb53cfb1e,
     type: 3}
 --- !u!1 &1006649529
@@ -446,9 +446,9 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 0, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -472,7 +472,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -100
   m_TargetDisplay: 0
 --- !u!224 &1006649533
 RectTransform:
@@ -5399,7 +5399,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.6123621, g: 0.83359194, b: 0.9339623, a: 0}
+  m_BackGroundColor: {r: 0.6933962, g: 0.90652317, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -5506,6 +5506,11 @@ PrefabInstance:
       propertyPath: movementForce
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114893464403140238, guid: 1d908afb8a22bd94bb7417b1b61378a0,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 58107430057705984, guid: 1d908afb8a22bd94bb7417b1b61378a0,
         type: 3}
       propertyPath: m_Material
@@ -5536,7 +5541,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114893464403140238, guid: 1d908afb8a22bd94bb7417b1b61378a0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1d908afb8a22bd94bb7417b1b61378a0, type: 3}
 --- !u!1001 &1187104010
 PrefabInstance:
@@ -5624,7 +5630,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304105518}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5633,7 +5639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -41, y: -24}
+  m_AnchoredPosition: {x: -46, y: -24}
   m_SizeDelta: {x: 258.1, y: 137.9}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1304105520
@@ -5676,6 +5682,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1304105518}
   m_CullTransparentMesh: 0
+--- !u!1 &1529597837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1659555223939240, guid: 1d908afb8a22bd94bb7417b1b61378a0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1151359702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1529597838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1529597837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6695795932a714b5eb0b38d5150ebafb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathEffect: {fileID: 0}
+  health: 1
+  movementForce: 50
+  boostForce: 0.5
+  jumpLimit: 0.5
+  startJump: 0.1
 --- !u!1 &1648529640
 GameObject:
   m_ObjectHideFlags: 0
@@ -6036,6 +6066,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TriggeredEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 109724784916412721, guid: 160ef6a441ff6144788646bc7b10cc88,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 109724784916412726, guid: 160ef6a441ff6144788646bc7b10cc88,
         type: 3}
