@@ -36,7 +36,7 @@ public class PlayerBehaviour : MonoBehaviour
         {
             isActivated = autoStart; // enable the player
         }
-
+        Time.timeScale = 1f;
     }
 
 
@@ -76,6 +76,7 @@ public class PlayerBehaviour : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
             deathpanel.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 

@@ -268,10 +268,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58a95ac98bfb46988a8163e4593c70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCooldown: 3
+  startCooldown: 2.5
   leftBoundary: -7
   rightBoundary: 8
-  obstacle: {fileID: 3606266256585053933, guid: 2864841519ce9324e9c70a1b8d068c99,
+  obstacle: {fileID: 4915965552591473498, guid: 2864841519ce9324e9c70a1b8d068c99,
     type: 3}
 --- !u!4 &259403105
 Transform:
@@ -363,7 +363,7 @@ MonoBehaviour:
   startCooldown: 2
   leftBoundary: -7
   rightBoundary: 8
-  obstacle: {fileID: 3606266256585053933, guid: 2864841519ce9324e9c70a1b8d068c99,
+  obstacle: {fileID: 4915965552591473498, guid: 2864841519ce9324e9c70a1b8d068c99,
     type: 3}
 --- !u!4 &326240754
 Transform:
@@ -618,10 +618,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58a95ac98bfb46988a8163e4593c70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCooldown: 3
+  startCooldown: 1
   leftBoundary: -7
   rightBoundary: 8
-  obstacle: {fileID: 3606266256585053933, guid: 2864841519ce9324e9c70a1b8d068c99,
+  obstacle: {fileID: 4915965552591473498, guid: 2864841519ce9324e9c70a1b8d068c99,
     type: 3}
 --- !u!4 &768842539
 Transform:
@@ -5837,10 +5837,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58a95ac98bfb46988a8163e4593c70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCooldown: 3
+  startCooldown: 1.3
   leftBoundary: -7
   rightBoundary: 8
-  obstacle: {fileID: 3606266256585053933, guid: 2864841519ce9324e9c70a1b8d068c99,
+  obstacle: {fileID: 4915965552591473498, guid: 2864841519ce9324e9c70a1b8d068c99,
     type: 3}
 --- !u!4 &1347516327
 Transform:
@@ -5888,10 +5888,10 @@ RectTransform:
   m_Father: {fileID: 1006649533}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 548, y: 330}
-  m_SizeDelta: {x: 326, y: 110.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -97, y: -55.25}
+  m_SizeDelta: {x: 300, y: 110.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1434881997
 MonoBehaviour:
@@ -5912,8 +5912,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 687dcec43b2f746efa5a1ceaf3ba0276, type: 3}
+    m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -6212,10 +6212,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f58a95ac98bfb46988a8163e4593c70a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCooldown: 3
+  startCooldown: 4
   leftBoundary: -7
   rightBoundary: 8
-  obstacle: {fileID: 3606266256585053933, guid: 2864841519ce9324e9c70a1b8d068c99,
+  obstacle: {fileID: 4915965552591473498, guid: 2864841519ce9324e9c70a1b8d068c99,
     type: 3}
 --- !u!4 &1677554105
 Transform:

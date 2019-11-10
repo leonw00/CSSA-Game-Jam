@@ -20,13 +20,12 @@ public class Destroyer : MonoBehaviour
 
     public void Start()
     {
-        txt = gameObject.GetComponent<Text>();
-        txt.text = "Score: " + score;
+        txt.text = "Score: " + score.ToString();
     }
 
     public void Update()
     {
-        txt.text = "Score: " + score;
+        txt.text = "Score: " + score.ToString();
     }
 
 }
