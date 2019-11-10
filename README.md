@@ -1,2 +1,2 @@
 # CSSA-Game-Jam
- snowman
+ Snowman Game
