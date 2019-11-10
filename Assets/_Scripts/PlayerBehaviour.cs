@@ -63,11 +63,6 @@ public class PlayerBehaviour : MonoBehaviour
             }
         }
 
-        if (health <= 0)
-        {
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Destroy(gameObject);
-        }
     }
 
 
@@ -76,7 +71,9 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (collision.CompareTag("Obstacle"))
         {
-            health -= 1;
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 
