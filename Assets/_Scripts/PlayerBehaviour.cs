@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehaviour : MonoBehaviour
 {
 
-    
+    public GameObject deathpanel;
     public GameObject deathEffect;
     public int health = 1;
 
@@ -74,6 +75,7 @@ public class PlayerBehaviour : MonoBehaviour
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(collision.gameObject);
             Destroy(gameObject);
+            deathpanel.SetActive(true);
         }
     }
 
