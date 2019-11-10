@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\_Scripts\Destroyer.cs" />
     <Compile Include="Assets\_Scripts\ObstacleController.cs" />
+    <Compile Include="Assets\_Scripts\PlayerBehaviour.cs" />
     <Compile Include="Assets\_Scripts\Spawner.cs" />
     <Compile Include="Assets\CheatSheets\CheatSheet_UI.cs" />
     <Compile Include="Assets\CheatSheets\CheatSheet_v0.cs" />
